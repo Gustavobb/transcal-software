@@ -1,1 +1,3 @@
-# transcal-software
+# Transcal software
+
+Software da materia de transcal
