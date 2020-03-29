@@ -24,10 +24,3 @@ object_structure = structure(element_list, knot_numbers, restriction, element_nu
 
 geraSaida(object_structure.reaction, object_structure.u_vector, object_structure.deformation, object_structure.internal_force, object_structure.tension)
 
-knot_coordinates_after = np.zeros((2, len(knot_coordinates[0])))
-
-for i in range(int(len(object_structure.u_vector)/2)):
-    knot_coordinates_after[0][i] = knot_coordinates[0][i] - object_structure.u_vector[2*i]
-    knot_coordinates_after[1][i] = knot_coordinates[1][i] - object_structure.u_vector[2*i + 1]
-
-plota(knot_coordinates_after, incidence)
